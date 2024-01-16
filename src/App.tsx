@@ -1,18 +1,17 @@
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <div className="p-2">
-        <h1 className="text-3xl text-fuchsia-900">
-         🖐 Hi, it's Amarnath mandal 😎
-        </h1>
-        <h2 className="text-xl text-blue-500">
-       <span className="text-3xl">🐱‍👤</span>  The SITE is under development
-        </h2>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

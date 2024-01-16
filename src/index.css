@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply d-flex-center py-2 px-6 rounded-full text-base border-primary text-white transition-colors duration-500;
+  }
+
+  .nav-links {
+    @apply text-base text-dark-gray font-medium hover:text-primary;
+  }
+
+  .social-links-container {
+    @apply h-10 w-10 border-[1px] rounded-full border-primary cursor-pointer d-flex-center hover:bg-primary;
+  }
+
+  .input {
+    @apply border-[1px] border-gray-300 outline-none w-full text-base text-black py-[8px] px-[15px];
+  }
+
+  .social-links {
+    @apply group-hover:text-white text-2xl text-primary;
+  }
+
+  .wrapper-container {
+    @apply w-full xl:w-[var(--width)] py-10 d-flex-center flex-col sm:px-4;
+  }
+
+  .section-heading {
+    @apply text-2xl md:text-3xl  w-fit font-bold text-black uppercase text-center relative;
+  }
+}
+
+:root {
+  --primary: #3498db;
+  --blue: #0d6efd;
+  --black: #222222;
+  --dark-gray: #555555;
+  --regular-gray: #484848;
+  --light-gray: #444444;
+  --white: #fff;
+
+  --width: 1280px;
+  --padding: 90px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body,
+html {
+  background-color: var(--white);
+  scroll-behavior: smooth;
+  /* // background-color: #f6f6f6; */
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0;
+}
