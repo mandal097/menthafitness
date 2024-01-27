@@ -15,7 +15,7 @@ function Footer() {
           <a
             href="https://mandal097-portfolio.netlify.app/"
             target="_blank"
-            className="font-medium text-primary cursor-pointer hover:text-blue hover:font-semibold">
+            className="font-medium text-blue cursor-pointer hover:text-blue hover:font-semibold">
             Amarnath mandal
           </a>
         </p>

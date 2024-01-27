@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col-reverse md:grid md:grid-cols-2">
           {/* left */}
           <div className="p-3 md:p-10 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#383737]">
+            <h1 className="text-4xl md:text-5xl font-light text-[#383737]">
               Learn Yoga And Weight Loss Online/Offline With Professional Tutor.
             </h1>
             <h2 className="text-xl md:text-xl font-light text-[#484848] mt-3 mb-7 ">
